@@ -51,7 +51,7 @@ class SimulatorWindow(BaseWindow):
                 if element.startswith("inputFretStateMeans"):
                     continue
                 else:
-                    getattr(self.ui, element).textChanged.connect(
+                    getattr(self.ui, element).valueChanged.connect(
                         self.refreshPlot
                     )
 
