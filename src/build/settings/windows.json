@@ -12,5 +12,14 @@
     "scipy.linalg.cython_blas",
     "scipy.linalg.cython_lapack",
     "tensorflow_core"
+  ],
+  "exclude_modules":[
+    "FixTk",
+    "tcl",
+    "tk",
+    "_tkinter",
+    "tkinter",
+    "Tkinter",
+    "pyi_rth__tkinter"
   ]
 }

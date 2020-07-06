@@ -1,0 +1,4 @@
+Microsoft Windows [Version 10.0.17763.1282]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\Hatzakis group\PycharmProjects\DeepFRET-GUI>^C

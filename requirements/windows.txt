@@ -1,2 +1,2 @@
 pypiwin32==223
-dataclasses=>0.7
+#xz cdataclasses=>0.7
