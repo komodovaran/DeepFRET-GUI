@@ -124,7 +124,7 @@ static
 
 # pycharm
 /.idea
-/venv
+/venv*
 /target
 /test
 /playground

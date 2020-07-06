@@ -23,7 +23,8 @@ def check_python_ver():
 
 def patch_pyinstaller():
     with zipfile.ZipFile("patch.zip", "r") as zip_ref:
-        zip_ref.extractall("venv/lib/python3.7/site-packages/PyInstaller/")
+        zip_ref.extractall("venv2/lib/python3.7/site-packages/PyInstaller/")
+    print("Unzipped patch.zip and extracted to PyInstaller")
 
 
 def write_to_config_ini():

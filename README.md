@@ -1,4 +1,4 @@
-<img src="screenshots/screenshot.png" height="400">
+﻿<img src="screenshots/screenshot.png" height="400">
 
 # DeepFRET
 A fully open-source, all-inclusive software platform for doing total internal reflection microscopy (TIRFm) single molecule
@@ -130,7 +130,7 @@ you will be able to load an "unlimited" amount of videos and extract a set numbe
 3. Create a venv with `python3 -m venv venv` in the current directory.
 4. Activate environment with `source venv/bin/activate` if on MacOS/Linux or `call venv\scripts\activate.bat` if on Windows.
 5. While still in the environment, install all packages with `pip install -r requirements.txt`
-6. Unzip the `hooks.zip` and overwrite the files in `venv/lib/python3.7/site-packages/PyInstaller/hooks/`.
+6. Unzip the `patch.zip` and overwrite the files in `venv/lib/python3.7/site-packages/PyInstaller/`, to add support for [scipy installation](https://stackoverflow.com/a/60582413)
 7. Run `compile.py`
 
 If the above steps worked, you can now edit any part of the code, and re-compile it (or just run it from the main.py
