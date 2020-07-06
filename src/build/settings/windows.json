@@ -1,0 +1,16 @@
+{
+  "hidden_imports":[
+    "encodings",
+    "dataclasses" ,
+    "scipy.linalg",
+    "scipy.special",
+    "scipy.special._ufuncs_cxx",
+    "scipy.linalg.blas",
+    "scipy.linalg._fblas",
+    "scipy.linalg.cython_blas",
+    "scipy.linalg.cython_lapack",
+    "scipy.linalg.cython_blas",
+    "scipy.linalg.cython_lapack",
+    "tensorflow_core"
+  ]
+}

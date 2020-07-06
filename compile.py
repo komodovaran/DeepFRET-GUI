@@ -29,6 +29,7 @@ def patch_pyinstaller(version: str):
             zip_ref.extractall("venv/lib/python3.7/site-packages/PyInstaller/")
         elif version.startswith("3.6"):
             zip_ref.extractall("venv/lib/python3.6/site-packages/PyInstaller/")
+    print("Unzipped patch.zip and extracted to PyInstaller")
 
 
 def write_to_config_ini():
