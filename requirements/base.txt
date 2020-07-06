@@ -1,5 +1,5 @@
 absl-py==0.7.1
-altgraph==0.16.1
+altgraph>=0.16
 appdirs==1.4.3
 astor==0.7.1
 astropy==4.0.1
@@ -15,14 +15,14 @@ Cython==0.29.16
 decorator==4.4.0
 distlib==0.3.0
 docutils==0.14
-fbs==0.8.6
+fbs>=0.8
 filelock==3.0.12
-future==0.17.1
+future==0.18.2
 gast==0.2.2
 google-auth==1.11.0
 google-auth-oauthlib==0.4.1
 google-pasta==0.1.7
-grpcio==1.20.1
+# grpcio>=1.20,
 h5py==2.9.0
 hmmlearn==0.2.3
 identify==1.4.13
@@ -35,7 +35,7 @@ Keras-Applications==1.0.8
 Keras-Preprocessing==1.1.0
 kiwisolver==1.1.0
 llvmlite==0.29.0
-macholib==1.11
+macholib==1.14
 Markdown==3.1
 matplotlib==3.2.1
 mock==3.0.5
@@ -57,7 +57,7 @@ pyasn1==0.4.8
 pyasn1-modules==0.2.8
 PyInstaller==3.4
 pyparsing==2.4.0
-PyQt5==5.14.2
+PyQt5==5.9.2
 PyQt5-sip==12.7.2
 PyQt5-stubs==5.14.1.1
 pyqtgraph==0.10.0

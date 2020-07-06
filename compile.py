@@ -7,23 +7,28 @@ import sys
 import warnings
 
 
-def check_python_ver():
+def check_python_ver() -> str:
     class CompilationWarning(Warning):
         pass
 
-    if sys.version.split(" ")[0] != "3.7.0b1":
+    version = sys.version.split(" ")[0]
+    if version not in ["3.7.0b1", "3.6.10"]:
         warnings.warn(
-            "Compiling is only tested to work on 3.7.0b1. "
+            "Compiling is only tested to work on 3.7.0b1 and 3.6.10 "
             "You seem to have a different version. ",
             stacklevel=2,
             category=CompilationWarning,
         )
         input("Press enter to continue anyway: ")
+    return version
 
 
-def patch_pyinstaller():
+def patch_pyinstaller(version: str):
     with zipfile.ZipFile("patch.zip", "r") as zip_ref:
-        zip_ref.extractall("venv2/lib/python3.7/site-packages/PyInstaller/")
+        if version.startswith("3.7"): # only install patch on 3.7 for now
+            zip_ref.extractall("venv/lib/python3.7/site-packages/PyInstaller/")
+        elif version.startswith("3.6"):
+            zip_ref.extractall("venv/lib/python3.6/site-packages/PyInstaller/")
     print("Unzipped patch.zip and extracted to PyInstaller")
 
 
@@ -50,8 +55,8 @@ def compile():
 
 
 if __name__ == "__main__":
-    check_python_ver()
-    patch_pyinstaller()
+    ver = check_python_ver()
+    patch_pyinstaller(ver)
     write_to_config_ini()
     write_to_base_json()
     compile()

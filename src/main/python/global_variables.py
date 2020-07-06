@@ -1,8 +1,9 @@
-from dataclasses import dataclass
+# from dataclasses import dataclass
+
 from collections import OrderedDict
 
 
-@dataclass
+# @dataclass
 class GlobalVariables:
     """
     Store keys to obtain default values here, and some hardcoded defaults for plots.
